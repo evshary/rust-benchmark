@@ -1,0 +1,13 @@
+[package]
+name = "criterion-bench"
+version = "0.1.0"
+edition = "2024"
+
+[dev-dependencies]
+criterion = "0.8.2"
+
+[[bench]]
+name = "criterion_bench"
+path = "benches/criterion_bench.rs"
+# Disable the default harness, use the Criterion benchmarking one instead
+harness = false
